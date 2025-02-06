@@ -13,6 +13,9 @@ body{
     padding: 0 40px; /* Ajusta el padding según necesites */
     box-shadow: 10px 7px 0px #000000;
 }
+.caja{
+    height: 1em;
+}
 
 .letras {
         
@@ -49,6 +52,24 @@ body{
     margin: 0;
     padding: 0;
     max-width: 100%; /* Asegura que use todo el ancho posible */
+}
+
+.titulos{
+    margin-top: 4%;
+    border: #000000 solid 2px;
+    align-content: center;
+    border-radius: 21px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.712);
+}
+.titulos h1{
+    font-size: 50px;
+    color: #000000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    
+    
 }
 
 /*Tamaño de pantallas pequeñas*/
