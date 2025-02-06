@@ -1,0 +1,98 @@
+body{
+    background-color: #F4F4F4;
+    margin: 30px;
+}
+.nav-background {
+    
+    display: flex;
+    justify-content: space-between; /* Mueve el texto a la izq. y la imagen a la der. */
+    align-items: center; /* Centra verticalmente */
+    border: 5px solid #BBBBBB;
+    border-radius: 33px;
+    background: linear-gradient(101deg, rgba(51,237,174,1) 0%, rgba(35,113,215,1) 100%);
+    padding: 0 40px; /* Ajusta el padding según necesites */
+    box-shadow: 10px 7px 0px #000000;
+}
+
+.letras {
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; /* Hace que use todo el ancho disponible */
+    padding: 10px; /* Agrega un poco de espacio interno */
+    overflow: hidden; /* Evita que el contenido se salga */
+    word-wrap: break-word; /* Permite que las palabras se dividan si es necesario */
+    text-align: center; /* Centra el texto */
+}
+
+.letras h1{
+    font-size: 100px;
+    color: #F4F4F4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 7px 6px #0000007a;
+}
+.img {
+    
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%; /* Asegura que use todo el ancho posible */
+}
+
+/*Tamaño de pantallas pequeñas*/
+@media screen and (max-width: 870px) {
+    body
+    {
+        margin: 20px;
+    }
+    .nav-background {
+        flex-direction: column; /* Cambia la dirección de los elementos */
+        padding: 20px; /* Ajusta el padding según necesites */
+    }
+    .letras {
+        margin-left: 0; /* Sin margen izquierdo */
+   
+    }
+    .img {
+        margin: 20px 0; /* Añade margen arriba y abajo */
+        
+    }
+    .letras h1{
+        font-size: 60px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 275px) {
+    .img{
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 566px) {
+   body{
+    margin: 15px;
+   }
+    .letras h1{
+        font-size: 30px;
+    }
+}
+
+
+
