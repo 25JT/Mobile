@@ -1,119 +1,164 @@
-body{
+body {
     background-color: #F4F4F4;
     margin: 30px;
 }
+
 .nav-background {
-    
     display: flex;
-    justify-content: space-between; /* Mueve el texto a la izq. y la imagen a la der. */
-    align-items: center; /* Centra verticalmente */
+    align-items: center;  /* Centra los elementos dentro del cuadro */
+    justify-content: space-between;
     border: 5px solid #BBBBBB;
     border-radius: 33px;
     background: linear-gradient(101deg, rgba(51,237,174,1) 0%, rgba(35,113,215,1) 100%);
-    padding: 0 40px; /* Ajusta el padding según necesites */
+    padding: 20px; /* Asegura espacio interno */
     box-shadow: 10px 7px 0px #000000;
+    height: 250px; /* Ajusta según sea necesario */
+    overflow: hidden; /* Evita que el contenido se salga */
 }
-.caja{
+
+.image-container {
+    position: relative;
+    width: 380px;
+    height: 400px;
+    margin: auto;
+    
+}
+
+/* Todas las imágenes se posicionan en el mismo lugar */
+.img {
+    position: absolute;
+
+
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+}
+
+/* Posiciones exactas de cada parte de la imagen */
+.img1 { top: 0; left:0; }  /* Mano 1 */
+.img2 { top: 0; left: 0; }  /* Teléfono */
+.img3 { top: 0; left: 0; }  /* Mano 2 */
+.img4 { top: 0; left: 0; }  /* Destornillador */
+.img5 { top: 0; left: 0; }  /* Pinzas */
+.img6 { top: 0; left: 0; }  /* SIM */
+
+/* Animaciones */
+@keyframes move1 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-9px); }
+}
+
+@keyframes move2 {
+    0%, 100% { transform: rotate(0deg); }
+    50% { transform: rotate(4deg); }
+}
+
+@keyframes move3 {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(10px); }
+}
+
+.img1 { animation: move1 2s infinite; }
+.img2 { animation: move2 3s infinite; }
+.img3 { animation: move3 2.5s infinite; }
+.img4 { animation: move2 3s infinite; }
+.img5 { animation: move3 2.5s infinite; }
+.img6 { animation: move1 2s infinite; }
+
+
+.caja {
     height: 1em;
 }
 
 .letras {
-        
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
-    width: 100%; /* Hace que use todo el ancho disponible */
-    padding: 10px; /* Agrega un poco de espacio interno */
-    overflow: hidden; /* Evita que el contenido se salga */
-    word-wrap: break-word; /* Permite que las palabras se dividan si es necesario */
-    text-align: center; /* Centra el texto */
+    width: 100%;
+    padding: 10px;
+    text-align: center;
 }
 
-.letras h1{
+.letras h1 {
     font-size: 100px;
     color: #F4F4F4;
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-style: italic;
     text-shadow: 2px 7px 6px #0000007a;
 }
+
 .img {
-    
     width: 100%;
     height: auto;
     max-width: 550px;
-    
 }
 
 .container {
     margin: 0;
     padding: 0;
-    max-width: 100%; /* Asegura que use todo el ancho posible */
+    max-width: 100%;
 }
 
-.titulos{
+.titulos {
     margin-top: 4%;
     border: #000000 solid 2px;
     align-content: center;
     border-radius: 21px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.712);
 }
-.titulos h1{
-    font-size: 50px;
+
+.titulos h1 {
+    font-size: 40px;
     color: #000000;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-style: italic;
-    
-    
 }
 
-/*Tamaño de pantallas pequeñas*/
+/* Tamaño de pantallas pequeñas */
 @media screen and (max-width: 870px) {
-    body
-    {
+    body {
         margin: 20px;
     }
     .nav-background {
-        flex-direction: column; /* Cambia la dirección de los elementos */
-        padding: 20px; /* Ajusta el padding según necesites */
+        height: 200px;
+    }  
+    .image-container{
+        width: 250px;
+        height: 250px;
     }
-    .letras {
-        margin-left: 0; /* Sin margen izquierdo */
-   
-    }
-    .img {
-        margin: 20px 0; /* Añade margen arriba y abajo */
-        
-    }
-    .letras h1{
+    .letras h1 {
         font-size: 60px;
-        
     }
+    .titulos h1 {
+        font-size: 30px;
     
+    }
 }
 
 @media screen and (max-width: 275px) {
-    .img{
+    .img {
         display: none;
     }
-
 }
-
-
 
 @media screen and (max-width: 566px) {
-   body{
-    margin: 15px;
-   }
-    .letras h1{
+    body {
+        margin: 15px;
+    }
+    .letras h1 {
         font-size: 30px;
     }
+    .image-container{
+        width: 150px;
+        height: 150px;
+    }
+    .titulos h1 {
+        font-size: 15px;
+    
+    }
 }
-
-
-
