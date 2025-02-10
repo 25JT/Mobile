@@ -118,6 +118,76 @@ body {
     font-weight: bold;
     font-style: italic;
 }
+.container_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+body{
+    background-color: #F4F4F4;
+    margin: 30px;
+}
+
+.letrasiMG {
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%; /* Hace que use todo el ancho disponible */
+    padding: 10px; /* Agrega un poco de espacio interno */
+    overflow: hidden; /* Evita que el contenido se salga */
+    word-wrap: break-word; /* Permite que las palabras se dividan si es necesario */
+    text-align: center; /* Centra el texto */
+}
+.letrasiMG h1{
+    font-size: 40PX;
+    color: #FF0000;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+.letrasiMG h2{
+    font-size: 30PX;
+    color: black;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.img_1 {
+    
+    width: 100%;
+    height: auto;
+    max-width: 550px;
+    animation: img_1 4s infinite;
+    
+}
+.container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%; /* Asegura que use todo el ancho posible */
+}
+/*Animacion IMG_1*/
+  @keyframes img_1 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-40px); }
+    85% { transform: translatex(50px); }
+}
+
 
 /* Tamaño de pantallas pequeñas */
 @media screen and (max-width: 870px) {
@@ -138,12 +208,33 @@ body {
         font-size: 30px;
     
     }
+    
+    .letrasiMG {
+        margin-left: 0; /* Sin margen izquierdo */
+   
+    }
+    .img_1 {
+        margin: 20px 0; /* Añade margen arriba y abajo */
+        
+    }
+    .letrasiMG h1{
+        font-size: 30px;
+        
+    }
+    .letrasiMG h2{
+        font-size: 20px;
+        
+    }
 }
 
 @media screen and (max-width: 275px) {
     .img {
         display: none;
     }
+    
+        .img_1{
+            display: none;
+        }
 }
 
 @media screen and (max-width: 566px) {
@@ -161,4 +252,19 @@ body {
         font-size: 15px;
     
     }
+    
+    .letrasiMG {
+        margin-left: 0; /* Sin margen izquierdo */
+   
+    }
+   
+    .letrasiMG h1{
+        font-size: 14px;
+        
+    }
+    .letrasiMG h2{
+        font-size: 11px;
+        
+    }
+  
 }
