@@ -181,6 +181,104 @@ body{
     padding: 0;
     max-width: 100%; /* Asegura que use todo el ancho posible */
 }
+.cont{
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: relative;
+
+}
+
+.titulo {
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.servicio {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    margin: 10px 0;
+    width: fit-content;
+    font-weight: bold;
+}
+.servicio2 {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 8px 12px;
+    border-radius: 15px;
+    margin: 10px 0;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.icono {
+    margin-right: 8px;
+}
+
+.verde {
+    background-color: #33EDAE;
+    color: black;
+    border: 2px solid black;
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+.azul {
+    background-color: #3498db;
+    color: black;
+    border: 2px solid #000000;
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.blanco {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+.rojo {
+    background-color: #e74c3c;
+    color: white;
+    border: 2px solid #000000;
+    align-self: flex-start;
+    font-size: 20px;
+}
+.cont-experiencia{
+    margin: 5px;
+    border: #000000 solid 2px;
+}
+.contimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente si es necesario */
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto; /* Centra el contenedor en la página */
+}
+
+.contimg img {
+    width: 100%; /* Hace que la imagen se ajuste al contenedor */
+    max-width: 100%; /* Evita que la imagen se salga de su contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen sin distorsionarla */
+    display: block; /* Evita espacios en blanco adicionales */
+}
+
 /*Animacion IMG_1*/
   @keyframes img_1 {
     0%, 100% { transform: translateY(0); }
