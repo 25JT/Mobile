@@ -118,6 +118,23 @@ body {
     font-weight: bold;
     font-style: italic;
 }
+.titulos2 {
+    margin-top: 4%;
+    border: #000000 solid 2px;
+    align-content: center;
+    border-radius: 21px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.712);
+}
+
+.titulos2 h1 {
+    font-size: 40px;
+    color: #E01819   ;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    
+}
 .container_img{
     display: flex;
     justify-content: center;
@@ -223,7 +240,8 @@ body{
 }
 
 .icono {
-    margin-right: 8px;
+    margin-right: 150px;
+    
 }
 
 .verde {
@@ -231,7 +249,7 @@ body{
     color: black;
     border: 2px solid black;
     align-self: flex-end;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .azul {
@@ -239,7 +257,7 @@ body{
     color: black;
     border: 2px solid #000000;
     align-self: flex-start;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .blanco {
@@ -247,15 +265,15 @@ body{
     color: black;
     border: 2px solid black;
     align-self: flex-end;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .rojo {
     background-color: #e74c3c;
-    color: white;
+    color: black;
     border: 2px solid #000000;
     align-self: flex-start;
-    font-size: 20px;
+    font-size: 30px;
 }
 .cont-experiencia{
     margin: 5px;
@@ -278,6 +296,91 @@ body{
     object-fit: cover; /* Ajusta la imagen sin distorsionarla */
     display: block; /* Evita espacios en blanco adicionales */
 }
+.container-butt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50%;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+}
+/* From Uiverse.io by Gautammsharma */ 
+.comic-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: rgb(51,237,174);
+    background: linear-gradient(101deg, rgba(51,237,174,1) 0%, rgba(35,113,215,1) 100%);
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #000;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .comic-button:hover {
+    background: #fff;
+    color: #E01819;
+    border: 2px solid #E01819;
+    box-shadow: 5px 5px 0px #E01819;
+  }
+  
+  .comic-button:active {
+    background-color: #fc9014;
+    box-shadow: none;
+    transform: translateY(4px);
+  }
+  .container-map{
+    box-shadow: #000000 0px 0px 10px;    
+    border: #000000 solid 1px;
+  }
+  .bordes{
+    border: #000000 solid 2px;
+    border-radius: 9px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.712);
+    max-width: 500px;
+    
+    text-align: center;
+  }
+  .bordes p{
+    margin: 10px;
+    text-align: justify;
+  }
+  .bordes h1{
+    color: white;
+    text-shadow: #000000 3px 2px 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .bordes a {
+    border: #E01819 dashed 2px;
+    border-radius: 6px;
+    padding: 5px; /* Ajusta el padding manualmente */
+    color: #33EDAE;
+    font-size: x-large;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin: 5%;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block; /* Solución para que transform funcione */
+}
+
+.bordes a:hover {
+    color: #3498db;
+    border: #BBBBBB dashed 2px;
+    transform: scale(1.1);
+}
+
 
 /*Animacion IMG_1*/
   @keyframes img_1 {
@@ -306,6 +409,10 @@ body{
         font-size: 30px;
     
     }
+    .titulos2 h1 {
+        font-size: 30px;
+    
+    }
     
     .letrasiMG {
         margin-left: 0; /* Sin margen izquierdo */
@@ -323,6 +430,33 @@ body{
         font-size: 20px;
         
     }
+    .icono {
+        margin-right: 150px;
+        
+    }
+    .verde {
+        font-size: 15px;
+    }
+    .azul {
+        font-size: 15px;
+    }
+    .blanco {
+        font-size: 15px;
+    }
+    .rojo {
+        font-size: 15px;
+    }
+    
+    .container-butt{      
+        gap: 20%;
+        padding: none;
+    }
+    .comic-button {
+        
+        padding: none;
+        font-size: 20px;
+  
+      }
 }
 
 @media screen and (max-width: 275px) {
@@ -350,19 +484,43 @@ body{
         font-size: 15px;
     
     }
+    .titulos2 h1 {
+        font-size: 15px;
     
+    }
     .letrasiMG {
         margin-left: 0; /* Sin margen izquierdo */
    
     }
    
     .letrasiMG h1{
-        font-size: 14px;
+        font-size: 20px;
         
     }
     .letrasiMG h2{
         font-size: 11px;
         
     }
+    .icono {
+        margin-right: 20px;
+        
+    }
+        .container-butt{      
+        gap: 10%;
+        padding: none;
+    }
+    .comic-button {
+        
+        padding: none;
+        font-size: 13px;
   
+      }
+     .bordes h1{
+        font-size: 17px;
+      }
+      .bordes p{
+        margin: 10px;
+        font-size: 14px;
+        text-align: justify;
+      }
 }
